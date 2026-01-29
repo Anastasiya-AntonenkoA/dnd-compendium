@@ -1,6 +1,8 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* --background: #0E0E0E; */
+  /* --background: #f3f1f1; */
+  --background: #FAFAFA;
+  --foreground: #070707;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -22,6 +24,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('/images/backend.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 * {

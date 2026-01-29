@@ -1,0 +1,45 @@
+.header {
+    background-color: #181818;
+    border-bottom: 2px solid #ffda73;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 64px;
+    height: 72px;
+}
+
+.logo{
+    color: #ffda73;
+    font-size: 48px;
+    font-family: "Bona Nova SC", serif;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #ffda73;
+    font-size: 1rem;
+}
+
+.navigation li a:hover {
+    color: #D84343;
+}

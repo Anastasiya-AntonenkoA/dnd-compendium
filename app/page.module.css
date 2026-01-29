@@ -1,0 +1,67 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Центруємо кнопки, якщо їх менше 4-х у рядку */
+  gap: 8px;
+  list-style: none;
+  padding: 20px;
+  margin: 0 auto;
+  width: 750px;
+}
+
+.navigation li {
+  /* Розрахунок для 4-х елементів: 100% / 4 = 25% */
+  flex: 0 1 calc(25% - 20px);
+  min-width: 90px;
+  
+  /* Щоб кнопки не ставали занадто вузькими */
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  text-decoration: none;
+
+  /* Колір тексту та іконок */
+  color: #6E0230;
+
+  /* Фон як у сторінки (прозорий) та червоний бордер */
+  background: transparent;
+  border: 1px solid #6E0230;
+  border-radius: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.book span {
+  margin-bottom: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* Опціонально: для більш "ігрового" вигляду */
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.book svg {
+  font-size: 2.5rem;
+  /* Щоб іконка теж була червоною, якщо вона не наслідує колір автоматично */
+  fill: currentColor;
+}
+
+/* Ефект при наведенні */
+.book:hover {
+  /* Світлішає фон або просто посилюється світіння */
+  /* background: rgba(255, 0, 0, 0.05); */
+
+  /* Яскраве червоне світіння */
+  box-shadow: 0 0 15px #6E0230 ;
+    /* inset 0 0 10px rgba(255, 0, 0, 0.3); */
+
+  /* Ефект світіння самого тексту та іконки */
+  /* text-shadow: 0 0 8px rgba(213, 19, 19, 0.908); */
+
+  transform: translateY(-3px);
+}

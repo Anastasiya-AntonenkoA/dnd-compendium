@@ -1,0 +1,195 @@
+{
+  "id": "bard",
+  "name": "Співець",
+  "general": {
+    "hitDice": "d8",
+    "primaryAbilities": ["charisma"],
+    "savingThrows": ["dexterity", "charisma"],
+
+    "proficiencies": {
+      "armor": ["light"],
+      "weapons": ["simple", "hand_crossbow", "longsword", "rapier", "shortsword"],
+      "tools": ["musical_instrument:any"],
+      "skills": {
+        "choose": 3,
+        "from": "any"
+      }
+    },
+
+    "spellcasting": {
+      "ability": "charisma",
+      "focus": ["musical_instrument"],
+      "rituals": false,
+      "preparation": "known"
+    }
+  },
+
+  "levelTable": {
+    "1": {
+      "features": ["bardic_inspiration", "spellcasting"]
+    },
+    "2": {
+      "features": ["jack_of_all_trades", "song_of_rest"]
+    },
+    "3": {
+      "features": ["bard_college", "competence"]
+    },
+    "4": {
+      "features": ["increase_in_characteristics", "bardic_versatility"]
+    },
+    "5": {
+      "features": ["Source_of_inspiration", "bardic_inspiration"]
+    },
+    "6": {
+      "features": ["counter_charm", "bard_college"]
+    },
+    "7": {
+      "features": []
+    },
+    "8": {
+      "features" :["increase_in_characteristics"]
+    },
+    "9": {
+      "features" :["song_of_rest"]
+    },
+    "10": {
+      "features" :["bardic_inspiration", "competence", "secrets_of_magic"]
+    },
+    "11": {
+      "features" :[]
+    },
+    "12": {
+      "features" :["increase_in_characteristics"]
+    },
+    "13": {
+      "features" :["song_of_rest"]
+    },
+    "14": {
+      "features" :["bard_college", "secrets_of_magic"]
+    },
+    "15": {
+      "features" :["bardic_inspiration"]
+    },
+    "16": {
+      "features" :["increase_in_characteristics"]
+    },
+    "17": {
+      "features" :["song_of_rest"]
+    },
+    "18": {
+      "features" :["secrets_of_magic"]
+    },
+    "19": {
+      "features" :["increase_in_characteristics"]
+    },
+    "20": {
+      "features" :["unsurpassed_inspiration"]
+    }
+  },
+
+  "resourcesByLevel": {
+    "1": {
+      "bardicInspiration": {
+        "uses": "charisma_mod",
+        "die": "d6"
+      }
+    },
+    "5": {
+      "bardicInspiration": {
+        "die": "d8"
+      }
+    },
+    "10": {
+      "bardicInspiration": {
+        "die": "d10"
+      }
+    },
+    "15": {
+      "bardicInspiration": {
+        "die": "d12"
+      }
+    }
+  },
+
+  "subclasses": {
+    "lore": {
+      "id": "lore",
+      "name": "Колегія знань",
+      "description": "Барди Колегії знань...",
+      "featuresByLevel": {
+        "3": ["bonus_proficiencies", "cutting_words"],
+        "6": ["additional_magical_secrets"],
+        "14": ["peerless_skill"]
+      }
+    },
+
+    "valor": {
+      "id": "valor",
+      "name": "Колегія доблесті",
+      "description": "Барди Колегії доблесті...",
+      "featuresByLevel": {
+        "3": ["combat_inspiration", "medium_armor_proficiency"],
+        "6": ["extra_attack"],
+        "14": ["battle_magic"]
+      }
+    },
+
+    "swords": {
+     "id": "swords",
+     "name": "Колегія меча",
+     "description": "Барди Колегії меча...",
+     "featuresByLevel": {
+        "3": ["fighting_style", "swordsman's_skill", "flowering_blades"],
+        "6": ["extra_attack"],
+        "14": ["skillful_flowering"]
+      }
+    },
+
+     "glamour": {
+     "id": "glamour",
+     "name": "Колегія причарування",
+     "description": "Барди Колегії причарування...",
+     "featuresByLevel": {
+        "3": ["magical_performance", "mantle_of_inspiration"],
+        "6": ["mantle_of_Greatness"],
+        "14": ["unbreakable_greatness"]
+      }
+    },
+
+    "whispers": {
+     "id": "whispers",
+     "name": "Колегія шепіта",
+     "description": "Барди Колегії шепіта...",
+     "featuresByLevel": {
+        "3": ["psychic_swords", "words_of_horror"],
+        "5": ["psychic_swords_3d6"],
+        "6": ["mantle_of_whispers"],
+        "10": ["psychic_swords_5d6"],
+        "14": ["knowledge_of_the_shadow"],
+        "15": ["psychic_swords_8d6"]
+      }
+    },
+
+     "Creation": {
+     "id": "Creation",
+     "name": "Колегія творення",
+     "description": "Барди Колегії творення...",
+     "featuresByLevel": {
+        "3": ["a_particle_of_potential", "creative_performance_(medium)"],
+        "6": ["invigorating_performance", "creative_performance_(Big)"],
+        "14": ["music_band", "creative_performance_(Huge)"]
+      }
+    },
+    
+     "eloquence": {
+     "id": "eloquence",
+     "name": "Колегія причарування",
+     "description": "Барди Колегії причарування...",
+     "featuresByLevel": {
+        "3": ["Orator", "disturbing_words"],
+        "6": ["inexhaustible_inspiration", "universal_speech"],
+        "14": ["Contagious_inspiration"]
+      }
+    }
+  }
+}
